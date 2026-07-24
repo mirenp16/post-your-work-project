@@ -1,27 +1,13 @@
->**Note**: Please **fork** this Udacity repository so you have a **remote** repository in **your** GitHub account. Then you can clone the remote repository to your local machine. Later, as a part of the project, you will push your changes to the remote repository in your GitHub account.
+# Bikeshare Project
+The goal of the Bikeshare project is to use Python to explore data related to bike share systems. It includes one Python file and one or more .csv data files.
 
-
-# Project Title
-
-Describe what your project is about and what it does
-
-## Information about how to use your project
-
-This could include:
-
-- Step-by-step instructions for installing or setting up your project.
-- Any software dependencies that need to be installed.
-- Instructions and examples for how to use your project, including any helpful code snippets.
-- Common issues and troubleshooting tips
-
-## Contribution guidelines
-
-If you welcome contributions, provide guidelines on how others can contribute to your project.
+## Features
+- Allows you to filter data based on the city and date
+- View statistical data for a specific user such as trip durations, reservations, costs, etc.
+- View the most popular stations and peak travel times
 
 ## Credits
-
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I did not complete the Bikeshare project prior to starting this course so I used Marvin AI to get some ideas about the features of this project.
 
 ## Date created
-
-Include the date you created this project and README file.
+July 24, 2026
