@@ -7,7 +7,9 @@ The goal of the Bikeshare project is to use Python to explore data related to bi
 - View the most popular stations and peak travel times
 
 ## Credits
-I did not complete the Bikeshare project prior to starting this course so I used Marvin AI to get some ideas about the features of this project.
+Miren Patel
+
+Note: I did not complete the Bikeshare project prior to starting this course so I used Marvin AI to get some ideas about the features of this project.
 
 ## Date created
 July 24, 2026
