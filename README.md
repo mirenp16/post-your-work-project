@@ -6,10 +6,15 @@ The goal of the Bikeshare project is to use Python to explore data related to bi
 - View statistical data for a specific user such as trip durations, reservations, costs, etc.
 - View the most popular stations and peak travel times
 
+## Files Included
+```bash
+bikeshare_starter.py: Python File
+```
+
 ## Credits
 Miren Patel
 
 Note: I did not complete the Bikeshare project prior to starting this course so I used Marvin AI to get some ideas about the features of this project.
 
-## Date created
+## Date Created
 July 24, 2026
