@@ -6,6 +6,20 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+def print_separator():
+    print('-' * 40)
+
+VALID_CITIES = ['chicago', 'new york city', 'washington']
+VALID_MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
+VALID_DAYS = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+
+def get_valid_input(prompt, valid_options):
+    value = input(prompt).strip().lower()
+    while value not in valid_options:
+        print(f"Invalid input. Choose from: {', '.join(valid_options)}")
+        value = input(prompt).strip().lower()
+    return value
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -15,19 +29,25 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    print("Hello! Let's explore some US bikeshare data!")
 
+    city = get_valid_input(
+        "Choose a city (chicago, new york city, washington): ",
+        VALID_CITIES
+    )
 
-    # get user input for month (all, january, february, ... , june)
+    month = get_valid_input(
+        "Choose a month (all, january, february, march, april, may, june): ",
+        VALID_MONTHS
+    )
 
+    day = get_valid_input(
+        "Choose a day (all, monday, tuesday, wednesday, thursday, friday, saturday, sunday): ",
+        VALID_DAYS
+    )
 
-    # get user input for day of week (all, monday, tuesday, ... sunday)
-
-
-    print('-'*40)
+    print_separator()
     return city, month, day
-
 
 def load_data(city, month, day):
     """
@@ -61,7 +81,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print_separator()
 
 
 def station_stats(df):
@@ -80,7 +100,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print_separator()
 
 
 def trip_duration_stats(df):
@@ -96,7 +116,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print_separator()
 
 
 def user_stats(df):
@@ -115,7 +135,7 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print_separator()
 
 
 def main():
